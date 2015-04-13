@@ -23,6 +23,7 @@ This adds two pages to the display and changes some LEDs for the second page.
 Run it with `mvn package` then `java -jar SaitekLCD-x.y-SNAPSHOT.jar`
 
 ```
+import static us.monoid.saitek.Saitek.*;
 public static void main(String[] args) throws InterruptedException {
     Saitek s = new Saitek(new File("C:\\Program Files (x86)\\Saitek\\DirectOutput"), new File("C:\\Program Files\\Saitek\\DirectOutput"));
 
