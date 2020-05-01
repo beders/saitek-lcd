@@ -1,25 +1,28 @@
 # saitek-lcd
-Simple Java API to access the LCD screen of a Saitek X52 Pro.
+Simple Java API to access the LCD screen of a [Saitek X52 Pro](http://www.saitek.com/uk/prod-bak/x52pro.html).
 
-This API enables adding pages of text to the LCD screen as well as control theLEDs.
+This API enables adding pages of text to the LCD screen as well as control LEDs.
 
 Pages can be scrolled with the up and down soft buttons.
+
 Pages can be switched with the Pg Up and Down buttons.
+
 Pages can be associated with a button LED configuration (i.e. turn LEDs off/on, turn them red/green/amber).
 
 ## Note
 Initial release. Has only seen testing on a 64-bit Windows 7 with the latest X52 Pro drivers.
-Let me know if you run into troubles.
+Let me know if you run into trouble.
 
 ## Usage
 
-Create an instance of Saitek with paths to the DirectOutput.DLL.
+Create an instance of the Saitek class with one or more paths to the `DirectOutput.DLL` which is part of the Saitek drivers.
 See example for standard paths.
 
-See documentation of us.monoid.saitek.Saitek for more information.
+See javadocs of us.monoid.saitek.Saitek for more information.
 
 ## Example
-This adds two pages to the display and changes some LEDs for the second page.
+
+The code below adds two pages to the LCD display of the controller and changes some LEDs for the second page.
 Run it with `mvn package` then `java -jar SaitekLCD-x.y-SNAPSHOT.jar`
 
 ```
